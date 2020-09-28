@@ -1,0 +1,365 @@
+/* Global Themes */
+
+@font-face {
+    font-family: 'MuliEB';
+    src: local('Muli'), url(../fonts/Muli-ExtraBold.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli'), url(../fonts/Muli-Regular.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'MuliB';
+    src: local('Muli'), url(../fonts/Muli-Bold.ttf) format('opentype');
+}
+
+body {
+    font-family: MuliEB;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+
+.newmark{
+    background-color: yellow;
+    color: black;
+}
+
+/* Market Theme */
+.market-theme {
+    font-family: FontAwesome, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* Warning Theme */
+.warning-theme {
+    background: #FF7161;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+/* Add Post Theme */
+.addpost-theme {
+    fontfamily: Muli;
+    background: #F3F3F3!important;
+    color: black;
+}
+
+/* Login Theme */
+.login-theme {
+    background: #FFFFFF;
+}
+/* End of Themes */
+
+/* Login */
+.login-wrapper {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container {
+    width: 400px;
+    height: 356px;
+    padding: 42px 71px;
+    align-items: center;
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.login-container h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    color: #0F0F0F;
+    margin-bottom: 30px;
+}
+.login-button {
+    height: 58px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+/* Ads */
+.ad-container {
+    display: block;
+    width: 100%;
+    background: #959595;
+    border-radius: 5px;
+}
+
+/* Add Post */
+.market_modal{
+    position: relative;
+}
+.addpost-container {
+    margin-bottom: 2rem;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    padding-top: 2rem !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px !important;
+}
+.addpost-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C6C6C6 !important;
+}
+.addpost-title h1 {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 39px;
+    color: #000000;
+}
+.addpost-title button {
+    background: #F3F3F3;
+    width: auto;
+    overflow: auto;
+    border: none;
+}
+.addpost-content {
+    margin-top: 1.5rem;
+    padding-right: 3rem;
+    padding-bottom: 10rem;
+}
+.addpost-row {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    grid-template-areas: "left right";
+    margin-bottom: 2rem;
+}
+.addpost-row div{
+    height: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.addpost-row .question{
+    grid-area: left;
+    margin-right: 10rem;
+}
+.addpost-row .answer{
+    grid-area: right;
+}
+.padding-right{
+    padding-right: 15rem;
+}
+
+/* Market Card */
+.market-card-container {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 60px;
+}
+.market-card {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px 21px;
+    margin-bottom: 20px;
+}
+.market-card .title{
+    width: 100%;
+    font-family: Catamaran, serif;
+}
+.market-card .title h1 {
+    display: inline;
+    margin-right: 10px;
+    font-family: Abel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.market-card .title .btn {
+    display: inline;
+    width: auto;
+    float: right;
+    color: #080808;
+    background: #FFFFFF;
+    border: none;
+}
+.market-card .info p {
+    font-family: Abel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.market-card p {
+    margin-top: 20px;
+    font-family: ABeeZee;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #080808;
+}
+.market-card .timestamp {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.025em;
+    color: #66676B;
+}
+.market-card .gallery-container {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow: auto;
+    z-index: 99!important;
+}
+
+/* Warning */
+.warning-container {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: center;
+}
+.warning-container p{
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Nav Bar */
+.topnav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    display: block;
+    overflow: hidden;
+    top: 0;
+    margin: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9!important;
+}
+
+.topnav span{
+    float: left;
+    font-family: MuliEB;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 97px;
+    align-items: center;
+    margin: -10px 10px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-shadow: 4px 4px 20px rgba(57, 146, 229, 0.1);
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    margin: 30px 14px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: MuliEB;
+    font-size: 17px;
+}
+.topnav a:hover {
+   color: #33ACFF;
+}
+
+.topnav button {
+    float: right;
+    display: block;
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+.topnav button.icon {
+    display: none;
+}
+/* End of Nav Bar */
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav button.icon {
+        display:block;
+        float:right;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: fixed;
+        display: block;
+        width: auto;
+        overflow: auto;
+        top: 50px;
+        right: 13px;
+    }
+
+    .topnav.responsive a{
+        font-family: Catamaran;
+        float: none;
+        color: black;
+        display: block;
+        text-align: center;
+    }
+}
+
+/*Globel styles*/
+button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+
+/*planner theme*/
+.planner-theme {
+    background-color: #d6d4d4 !important;
+    font-family: Muli;
+}
+.planner-theme-color {
+    color: #3498DB;
+}
+
+.filter_active {
+    background-color: #3498DB;  /*filter button active background color*/
+    color: white;               /*filter button active text color*/
+}
+
+.rating-box p{
+    color: #5ACC00;
+}
+.add-review-theme {
+    background: #F3F3F3 !important;
+    color: black;
+    font-family: Muli;
+}

@@ -1,0 +1,93 @@
+/*filter css*/
+.filter{
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+.planner-theme .filter-button{
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+.filter .title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #383838;
+    margin: 5px;
+}
+.filter .filter-tab {
+    border-radius: 50px;
+    padding: 3px;
+    box-shadow: 2px 3px 3px grey;
+
+}
+.filter-tab button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.filter-tab .left {
+    width: 50%;
+}
+.filter-tab .right {
+    float: right;
+    width: 50%;
+}
+.filter-form{
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+
+/*planner css*/
+.container-wrapper{
+    width: 100vw;
+    margin: 0;
+}
+
+.inside_content {
+    min-height: 90vh;
+    width: 100%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 25vw auto 25vw;
+    grid-template-areas: "left center right";
+
+}
+
+.filter-area {
+    grid-area: left;
+    padding-right: 10px;
+}
+
+.center-area {
+    grid-area: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.right-ads-area {
+    grid-area: right;
+    padding-left: 10px;
+}
+.card-container {
+    width: 100%;
+    height: 150vh;
+    overflow-y: scroll;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
