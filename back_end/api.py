@@ -284,7 +284,7 @@ rule1si = [
   }
 ]
 
-apikey = '0a9a7d632971440e9f6f4e46029f96ea'
+
 client = ScrapinghubClient(apikey)
 dynamodb = boto3.client('dynamodb')
 app = Flask(__name__)
@@ -568,7 +568,7 @@ def send_request(asin):
             response = requests.get(
                 url="https://api.proxycrawl.com/",
                 params={
-                    "token": "KNGLScDpHQFg_gzSN6u22Q",
+     
                     "url": "https://www.amazon.com/product-reviews/"+ asin +"/ref=cm_cr_getr_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber=1",
                 },
 
